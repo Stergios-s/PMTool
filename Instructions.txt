@@ -1,0 +1,4 @@
+Instructions
+- Scenarios are using Chrome so in the beggining of all scenarios you have to define the chromedriver.exe path
+- Cases 18,19,22,25,26 make use of file "dummy_text.txt" so you also have to define it's path
+
