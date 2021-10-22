@@ -54,7 +54,10 @@ public class Case_4 {
 		} else {
 			System.out.println("Scenario failed due to wrong message after user registration");
 		}
-
+		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 	}
 
 }

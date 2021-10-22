@@ -73,7 +73,11 @@ public class Case_9 {
 		    Thread.currentThread().interrupt();
 		}
 		// Create new project is a common element found in both new and existing accounts
-		driver.findElement(By.xpath("//*[text()='Create']"));		
+		driver.findElement(By.xpath("//*[text()='Create']"));
+		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 	}
 
 }

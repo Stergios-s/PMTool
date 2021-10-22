@@ -154,6 +154,9 @@ public class Case_11 {
 			System.out.println("Scenario failed! Mandatory field message is not printed when description is missing");
 		}
 		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 		
 	}
 

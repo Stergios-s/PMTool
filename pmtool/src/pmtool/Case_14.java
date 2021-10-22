@@ -194,8 +194,11 @@ public class Case_14 {
 			System.out.println("Succesfull scenario when name of description of project is missing");
 		} else {
 			System.out.println("Scenario failed! Mandatory field message is not printed when name of description of project is missing");
-		}		
+		}	
 		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 		
 	}
 

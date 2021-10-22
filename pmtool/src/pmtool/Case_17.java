@@ -201,6 +201,9 @@ public class Case_17 {
         	System.out.println("Project 2 deletion was successful");
         }
 	
+		// Teardown
+		driver.close(); 
+		driver.quit();
 
 	}
 

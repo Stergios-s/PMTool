@@ -44,7 +44,6 @@ public class Case_3 {
 		    Thread.currentThread().interrupt();
 		}
 		
-		System.out.println(driver.findElement(By.xpath("//*[@class='card-title']")).getText());
 		String expected_text = "Successfull registration, login to start using PPMTool";
 		String sunny_day_text = driver.findElement(By.xpath("//*[@class='row']/div/div/div/p")).getText();
 		System.out.println(sunny_day_text);
@@ -54,7 +53,10 @@ public class Case_3 {
 		} else {
 			System.out.println("Scenario failed due to wrong message after user registration");
 		}
-
+		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 	}
 
 }

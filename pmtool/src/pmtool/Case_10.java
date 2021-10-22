@@ -142,10 +142,11 @@ public class Case_10 {
 		} else {
 			System.out.println("Project deletion was successful");
 		}
-              		
+        
+		// Teardown
+		driver.close(); 
+		driver.quit();
         
 	}
 	
-
-
 }

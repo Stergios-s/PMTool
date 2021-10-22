@@ -51,7 +51,10 @@ public class Case_5 {
 		} else {
 			System.out.println("Scenario failed! Mandatory field message is not printed");
 		}
-
+		
+		// Teardown
+		driver.close(); 
+		driver.quit();
 	}
 
 }
