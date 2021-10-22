@@ -38,7 +38,7 @@ public class Case_9 {
 		driver.findElement(By.cssSelector("button[name='action']")).click();
 		
 		try {
-		    Thread.sleep(500);
+		    Thread.sleep(1000);
 		} catch (InterruptedException ie) {
 		    Thread.currentThread().interrupt();
 		}
@@ -74,6 +74,31 @@ public class Case_9 {
 		}
 		// Create new project is a common element found in both new and existing accounts
 		driver.findElement(By.xpath("//*[text()='Create']"));
+		
+		driver.findElement(By.id("logout")).click();
+		
+		// Login to account
+		driver.findElement(By.id("login")).click();				
+
+		// Form requires email to be lower case
+		driver.findElement(By.id("email")).sendKeys("john_d" + formateddatetime + "@in.gr");
+		driver.findElement(By.id("password")).sendKeys("123456");
+					
+		try {
+		    Thread.sleep(200);
+		} catch (InterruptedException ie) {
+		    Thread.currentThread().interrupt();
+		}
+		driver.findElement(By.cssSelector("button[name='action']")).click();
+						
+		try {
+		    Thread.sleep(500);
+		} catch (InterruptedException ie) {
+		    Thread.currentThread().interrupt();
+		}
+		// Create new project is a common element found in both new and existing accounts
+		driver.findElement(By.xpath("//*[text()='Create']"));
+		
 		
 		// Teardown
 		driver.close(); 
